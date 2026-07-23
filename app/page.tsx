@@ -1,65 +1,126 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const interests = [
+  {
+    title: "Neurosymbolic AI",
+    desc: "Combining neural perception with symbolic reasoning (ASP) for Visual Question Answering",
+    icon: "⧉",
+  },
+  {
+    title: "Explainability",
+    desc: "Contrastive explanations for AI decisions, making models auditable and trustworthy",
+    icon: "⭐",
+  },
+  {
+    title: "Optimization",
+    desc: "Large-neighbourhood search for Answer Set Programming (ALASPO system)",
+    icon: "⚡",
+  },
+  {
+    title: "Knowledge & LLMs",
+    desc: "Declarative knowledge distillation from large language models for structured reasoning",
+    icon: "⬡",
+  },
+];
+
+const timeline = [
+  {
+    period: "2026 – present",
+    role: "AI Researcher",
+    org: "ExtensityAI",
+    detail: "Research and development on neurosymbolic AI systems.",
+  },
+  {
+    period: "2024",
+    role: "Research Intern",
+    org: "NII, Tokyo, Japan",
+    detail: "6-month internship. Fuzzy logic constraints in deep learning for autonomous driving. Led to NeurIPS 2025 paper.",
+  },
+  {
+    period: "2020 – 2025",
+    role: "PhD Researcher",
+    org: "TU Wien, Austria",
+    detail: "Neurosymbolic AI under Thomas Eiter. Bosch industrial collaboration. Co-supervised 3 BSc + 1 MSc students. PC member of NeSy and TAASP.",
+  },
+  {
+    period: "2019 – 2020",
+    role: "Software Engineer",
+    org: "Vigigo, Chile",
+    detail: "Full-stack development in agile. Delivered projects Gregario, Sherpy, HX, and Nomad.",
+  },
+  {
+    period: "2018 – 2019",
+    role: "MSc Computer Science",
+    org: "Universidad de Chile",
+    detail: "GPA 7.0/7.0 cum laude. Advised by Pablo Barceló and Jorge Pérez. IMFD scholarship.",
+  },
+  {
+    period: "2012 – 2019",
+    role: "BSc Engineering in CS",
+    org: "Universidad de Chile, FCFM",
+    detail: "GPA 6.5/7.0 cum laude. Beca Presidente de la República and Bicentenario scholar.",
+  },
+];
+
+const pages = [
+  { href: "/publications", label: "Publications" },
+  { href: "/projects", label: "Projects" },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="masonry px-5 pt-8 pb-16">
+      <article className="tile">
+        <p className="text-xs text-muted tracking-[1.5px] lowercase mb-2">
+          ai researcher
+        </p>
+        <p className="text-sm leading-relaxed">
+          Computer scientist specializing in <strong>neurosymbolic AI</strong>{" "}
+          &mdash; systems that combine neural networks with logical reasoning to
+          produce results that are explainable, verifiable, and auditable. PhD
+          from <strong>TU Wien</strong>, published at <strong>NeurIPS</strong>,{" "}
+          <strong>AAAI</strong>, <strong>IJCAI</strong>, and the{" "}
+          <em>Artificial Intelligence</em> journal.
+        </p>
+      </article>
+
+      {pages.map((p) => (
+        <Link key={p.href} href={p.href} className="tile tile-link">
+          {p.label}
+        </Link>
+      ))}
+
+      {interests.map((item) => (
+        <article key={item.title} className="tile">
+          <div className="font-display text-2xl mb-1">{item.icon}</div>
+          <h3 className="text-sm font-semibold mb-1">{item.title}</h3>
+          <p className="text-xs leading-[1.4] text-muted">{item.desc}</p>
+        </article>
+      ))}
+
+      {timeline.map((item) => (
+        <article key={item.period} className="tile">
+          <div className="text-xs text-muted tracking-[1.5px] lowercase mb-1">
+            {item.period}
+          </div>
+          <div className="text-sm font-semibold">
+            {item.role} <span className="font-normal text-muted">&middot; {item.org}</span>
+          </div>
+          <p className="text-xs leading-[1.4] text-muted mt-1">{item.detail}</p>
+        </article>
+      ))}
+
+      <a href="mailto:nelson.higueraruiz@extensity.ai" className="tile tile-link text-sm">
+        nelson.higueraruiz@extensity.ai
+      </a>
+      <a
+        href="https://linkedin.com/in/nelson-higuera-ruiz-4372b2204"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="tile tile-link"
+      >
+        LinkedIn
+      </a>
     </div>
   );
 }
