@@ -9,7 +9,10 @@
 
 - 2026-07-22: Wordmark shows the complete name (NELSON NICOLΛS / HIGUERΛ RUIZ, two lines); metadata and footer updated to match. Removed all four stat boxes from the home page. Removed all PuduSoft references (timeline, project entry, contact email). Added ExtensityAI (AI Researcher, 2026 – present) to the timeline; contact email is now nelson.higueraruiz@extensity.ai.
 
+- 2026-07-23: Published to GitHub Pages at https://pudumagico.github.io/ (repo pudumagico/pudumagico.github.io, static export via output: "export", Actions workflow deploy on push to main; old 2022 Jekyll stub preserved on the master branch). Footer GitHub link set to pudumagico.
+
+- 2026-07-23: Removed the Personal tab and page on request (supersedes the pending item to fill it); nav back to About | Publications | Projects. Added sitemap.ts, robots.ts, and metadataBase for search indexing.
+
 ## Pending
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
-- Fill the Personal page with content dictated by Nelson.
-- Replace placeholder GitHub username in the footer link.
+- Verify the site in Google Search Console and request indexing to speed up discovery.

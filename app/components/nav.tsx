@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const links = [
-  { href: "/", label: "Professional" },
-  { href: "/personal", label: "Personal" },
+  { href: "/", label: "About" },
+  { href: "/publications", label: "Publications" },
+  { href: "/projects", label: "Projects" },
 ];
 
 function toggleTheme() {
@@ -17,7 +18,8 @@ function toggleTheme() {
 
 export default function Nav() {
   const pathname = usePathname();
-  const active = pathname.startsWith("/personal") ? "/personal" : "/";
+  // Strips trailing slashes so static-export paths like /publications/ match
+  const active = pathname.replace(/\/+$/, "") || "/";
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -58,7 +60,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              aria-current={l.href === active ? "page" : undefined}
+              aria-current={active === l.href ? "page" : undefined}
             >
               {l.label}
             </Link>

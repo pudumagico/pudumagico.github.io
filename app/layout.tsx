@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pudumagico.github.io"),
   title: {
     default: "Nelson Nicolas Higuera Ruiz — AI Researcher",
     template: "%s",
