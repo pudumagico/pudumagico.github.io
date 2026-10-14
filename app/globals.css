@@ -69,12 +69,12 @@ a[target="_blank"]::after {
   margin-left: 3px;
 }
 
-/* Wordmark: Inter Tight, tight tracking, per-letter rainbow hover fading back over 10s */
+/* Wordmark: Times, tight tracking, per-letter rainbow hover fading back over 10s */
 .wordmark {
-  font-family: var(--font-display);
+  font-family: "Times New Roman", Times, serif;
   font-size: 32px;
-  font-weight: 600;
-  letter-spacing: -1px;
+  font-weight: 400;
+  letter-spacing: -2px;
   line-height: 1.1;
 }
 .wordmark span span {
