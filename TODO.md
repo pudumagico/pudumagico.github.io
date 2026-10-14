@@ -27,6 +27,8 @@
 
 - 2026-10-14: Fonts switched to Inter Tight everywhere (body, wordmark, headings) via next/font with Greek subset for the Λ in the wordmark; replaced system sans and Times New Roman. Tightened home spacing to keep the one-screen fit.
 
+- 2026-10-14: Root font size raised to 17px (all rem text ~6% larger); home still fits 1440x900.
+
 ## Pending
 - Confirm the CENIA entry detail text.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).

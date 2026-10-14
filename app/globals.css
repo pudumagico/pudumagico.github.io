@@ -40,6 +40,11 @@
   --font-display: var(--font-inter-tight), sans-serif;
 }
 
+/* 17px root scales every rem-based Tailwind text size by ~6% */
+html {
+  font-size: 17px;
+}
+
 /* Flat 60px checkerboard: two diagonal quadrants per 120px tile in each tone */
 body {
   background: repeating-conic-gradient(var(--check-a) 0 25%, var(--check-b) 0 50%) 0 0 / 120px 120px;
