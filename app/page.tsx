@@ -31,7 +31,7 @@ const timeline = [
     detail: "Postdoc at the National Center for Artificial Intelligence (CENIA).",
   },
   {
-    period: "2026",
+    period: "Jan – Nov 2026",
     role: "AI Researcher",
     org: "ExtensityAI",
     detail: "Research and development on neurosymbolic AI systems.",

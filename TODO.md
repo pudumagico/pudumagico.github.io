@@ -15,7 +15,7 @@
 
 - 2026-10-14: Added meta keywords and an NH favicon (app/icon.svg, black square with white NH); removed the default Next.js favicon.ico.
 
-- 2026-10-14: Timeline: ExtensityAI closed (2026, contract ends Nov 2026); added CENIA postdoc (from Dec 2026). Keywords extended with CENIA, Pontificia Universidad Católica de Chile, PUC.
+- 2026-10-14: Timeline: ExtensityAI closed (Jan – Nov 2026); added CENIA postdoc (from Dec 2026). Keywords extended with CENIA, Pontificia Universidad Católica de Chile, PUC.
 
 - 2026-10-14: Contact email changed to nhigueraruiz@gmail.com; CENIA entry org is plain "CENIA".
 
