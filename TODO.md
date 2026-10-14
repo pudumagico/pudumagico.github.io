@@ -25,7 +25,7 @@
 
 - 2026-10-14: Checkerboard squares enlarged to 60px; removed emoji icons from interest tiles; home timeline split into Industry, Academic, and Education columns (PhD under Education) below the masonry tiles; compact tiles (period right-aligned on the role line) so the home page fits one 1440x900 screen.
 
-- 2026-10-14: Fonts switched to Inter (body) and Inter Tight (wordmark, headings) via next/font with Greek subset for the Λ in the wordmark; replaced system sans and Times New Roman. Tightened home spacing to keep the one-screen fit.
+- 2026-10-14: Fonts switched to Inter Tight everywhere (body, wordmark, headings) via next/font with Greek subset for the Λ in the wordmark; replaced system sans and Times New Roman. Tightened home spacing to keep the one-screen fit.
 
 ## Pending
 - Confirm the CENIA entry detail text.
