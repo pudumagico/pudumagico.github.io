@@ -36,8 +36,8 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-card: var(--card);
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-inter-tight), sans-serif;
 }
 
 /* Flat 60px checkerboard: two diagonal quadrants per 120px tile in each tone */
@@ -52,11 +52,11 @@ body {
 h1,
 h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
-/* Small serif arrow appended to every link that opens a new tab */
+/* Small arrow appended to every link that opens a new tab */
 a[target="_blank"]::after {
   content: "\2197";
   font-size: 0.8em;
@@ -64,12 +64,12 @@ a[target="_blank"]::after {
   margin-left: 3px;
 }
 
-/* Wordmark: Times, tight tracking, per-letter rainbow hover fading back over 10s */
+/* Wordmark: Inter Tight, tight tracking, per-letter rainbow hover fading back over 10s */
 .wordmark {
   font-family: var(--font-display);
   font-size: 32px;
-  font-weight: 400;
-  letter-spacing: -2px;
+  font-weight: 600;
+  letter-spacing: -1px;
   line-height: 1.1;
 }
 .wordmark span span {

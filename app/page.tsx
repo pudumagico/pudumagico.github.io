@@ -77,13 +77,13 @@ const pages = [
 
 export default function Home() {
   return (
-    <div className="px-5 pt-8 pb-6">
+    <div className="px-5 pt-4 pb-6">
       <div className="masonry">
         <article className="tile">
           <p className="text-xs text-muted tracking-[1.5px] lowercase mb-2">
             ai researcher
           </p>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-normal">
             Computer scientist specializing in <strong>neurosymbolic AI</strong>{" "}
             &mdash; systems that combine neural networks with logical reasoning to
             produce results that are explainable, verifiable, and auditable. PhD

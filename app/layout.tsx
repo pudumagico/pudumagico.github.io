@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import { Inter, Inter_Tight } from "next/font/google";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin", "greek"], variable: "--font-inter" });
+const interTight = Inter_Tight({ subsets: ["latin", "greek"], variable: "--font-inter-tight" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pudumagico.github.io"),
@@ -28,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans">
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <Nav />
