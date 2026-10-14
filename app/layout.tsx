@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Checkerboard from "./components/checkerboard";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import "./globals.css";
@@ -32,7 +31,6 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans">
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
-        <Checkerboard />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

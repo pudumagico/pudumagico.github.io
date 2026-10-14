@@ -11,6 +11,8 @@
   --card: rgba(255, 255, 255, 0.9);
   --invert-bg: #000;
   --invert-text: #fff;
+  --check-a: #fff;
+  --check-b: #ebebeb;
 }
 
 .dark-mode {
@@ -23,6 +25,8 @@
   --card: rgba(0, 0, 0, 0.9);
   --invert-bg: #e0e0e0;
   --invert-text: #121212;
+  --check-a: #333;
+  --check-b: #1a1a1a;
 }
 
 @theme inline {
@@ -36,8 +40,9 @@
   --font-display: "Times New Roman", Times, serif;
 }
 
+/* Flat 40px checkerboard: two diagonal quadrants per 80px tile in each tone */
 body {
-  background: var(--background);
+  background: repeating-conic-gradient(var(--check-a) 0 25%, var(--check-b) 0 50%) 0 0 / 80px 80px;
   color: var(--foreground);
   font-size: 16px;
   line-height: 1.6;

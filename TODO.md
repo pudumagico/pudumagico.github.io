@@ -21,6 +21,8 @@
 
 - 2026-10-14: Checkerboard background made static (no animation loop); it redraws only on resize and theme change.
 
+- 2026-10-14: Replaced the WebGL perspective floor with a flat CSS checkerboard (40px squares, white/#ebebeb light, #333/#1a1a1a dark); deleted checkerboard.tsx.
+
 ## Pending
 - Confirm the CENIA entry detail text; switch period to "2026 – present" in December.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
