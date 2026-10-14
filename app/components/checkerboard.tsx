@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const FRAG = `precision mediump float;
-uniform vec2 u_res; uniform float u_time; uniform float u_dark;
+uniform vec2 u_res; uniform float u_dark;
 void main() {
   vec2 uv = (gl_FragCoord.xy * 2.0 - u_res) / u_res.y;
   vec3 rd = normalize(vec3(uv.x, uv.y - 0.35, -1.0));
@@ -12,7 +12,6 @@ void main() {
   if (rd.y < -0.01) {
     float d = -1.0 / rd.y;
     vec2 p = vec2(rd.x, rd.z) * d;
-    p.y -= u_time * 0.4;
     float c = mod(floor(p.x) + floor(p.y), 2.0);
     vec3 a = mix(vec3(1.0), vec3(0.2), u_dark);
     vec3 b = mix(vec3(0.92), vec3(0.1), u_dark);
@@ -48,41 +47,22 @@ export default function Checkerboard() {
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
 
     const uRes = gl.getUniformLocation(program, "u_res");
-    const uTime = gl.getUniformLocation(program, "u_time");
     const uDark = gl.getUniformLocation(program, "u_dark");
-    let dark = document.documentElement.classList.contains("dark-mode") ? 1 : 0;
-    let raf = 0;
-
-    const resize = () => {
+    const draw = () => {
       canvas.width = canvas.clientWidth * devicePixelRatio;
       canvas.height = canvas.clientHeight * devicePixelRatio;
       gl.viewport(0, 0, canvas.width, canvas.height);
-    };
-    const draw = (ms: number) => {
       gl.uniform2f(uRes, canvas.width, canvas.height);
-      gl.uniform1f(uTime, ms / 1000);
-      gl.uniform1f(uDark, dark);
+      gl.uniform1f(uDark, document.documentElement.classList.contains("dark-mode") ? 1 : 0);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
-      raf = requestAnimationFrame(draw);
-    };
-    const onTheme = () => {
-      dark = document.documentElement.classList.contains("dark-mode") ? 1 : 0;
-    };
-    const onVisibility = () => {
-      cancelAnimationFrame(raf);
-      if (!document.hidden) raf = requestAnimationFrame(draw);
     };
 
-    resize();
-    raf = requestAnimationFrame(draw);
-    window.addEventListener("resize", resize);
-    window.addEventListener("themeChanged", onTheme);
-    document.addEventListener("visibilitychange", onVisibility);
+    draw();
+    window.addEventListener("resize", draw);
+    window.addEventListener("themeChanged", draw);
     return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("themeChanged", onTheme);
-      document.removeEventListener("visibilitychange", onVisibility);
+      window.removeEventListener("resize", draw);
+      window.removeEventListener("themeChanged", draw);
     };
   }, []);
 

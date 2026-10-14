@@ -19,6 +19,8 @@
 
 - 2026-10-14: Contact email changed to nhigueraruiz@gmail.com; CENIA entry org is plain "CENIA".
 
+- 2026-10-14: Checkerboard background made static (no animation loop); it redraws only on resize and theme change.
+
 ## Pending
 - Confirm the CENIA entry detail text; switch period to "2026 – present" in December.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
