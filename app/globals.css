@@ -40,9 +40,9 @@
   --font-display: "Times New Roman", Times, serif;
 }
 
-/* Flat 40px checkerboard: two diagonal quadrants per 80px tile in each tone */
+/* Flat 60px checkerboard: two diagonal quadrants per 120px tile in each tone */
 body {
-  background: repeating-conic-gradient(var(--check-a) 0 25%, var(--check-b) 0 50%) 0 0 / 80px 80px;
+  background: repeating-conic-gradient(var(--check-a) 0 25%, var(--check-b) 0 50%) 0 0 / 120px 120px;
   color: var(--foreground);
   font-size: 16px;
   line-height: 1.6;

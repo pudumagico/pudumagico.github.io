@@ -23,6 +23,8 @@
 
 - 2026-10-14: Replaced the WebGL perspective floor with a flat CSS checkerboard (40px squares, white/#ebebeb light, #333/#1a1a1a dark); deleted checkerboard.tsx.
 
+- 2026-10-14: Checkerboard squares enlarged to 60px; removed emoji icons from interest tiles; home timeline split into Industry and Academic columns below the masonry tiles.
+
 ## Pending
 - Confirm the CENIA entry detail text.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
