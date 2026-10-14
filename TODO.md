@@ -29,6 +29,8 @@
 
 - 2026-10-14: Root font size raised to 17px (all rem text ~6% larger); home still fits 1440x900.
 
+- 2026-10-14: Tagline (neurosymbolic ai researcher) shares the wordmark's per-letter rainbow hover via a .rainbow class and rainbow() helper in nav.tsx.
+
 ## Pending
 - Confirm the CENIA entry detail text.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).

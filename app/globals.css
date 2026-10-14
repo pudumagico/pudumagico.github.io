@@ -69,7 +69,7 @@ a[target="_blank"]::after {
   margin-left: 3px;
 }
 
-/* Wordmark: Times, tight tracking, per-letter rainbow hover fading back over 10s */
+/* Wordmark: Times, tight tracking, per-letter rainbow hover (shared with the tagline via .rainbow) fading back over 10s */
 .wordmark {
   font-family: "Times New Roman", Times, serif;
   font-size: 32px;
@@ -77,18 +77,18 @@ a[target="_blank"]::after {
   letter-spacing: -2px;
   line-height: 1.1;
 }
-.wordmark span span {
+.rainbow > span {
   transition: color 10s ease;
 }
-.wordmark span span:hover {
+.rainbow > span:hover {
   transition: none;
 }
-.wordmark span span:nth-child(6n + 1):hover { color: #ff3b30; }
-.wordmark span span:nth-child(6n + 2):hover { color: #ff9500; }
-.wordmark span span:nth-child(6n + 3):hover { color: #ffcc00; }
-.wordmark span span:nth-child(6n + 4):hover { color: #34c759; }
-.wordmark span span:nth-child(6n + 5):hover { color: #5856d6; }
-.wordmark span span:nth-child(6n):hover { color: #af52de; }
+.rainbow > span:nth-child(6n + 1):hover { color: #ff3b30; }
+.rainbow > span:nth-child(6n + 2):hover { color: #ff9500; }
+.rainbow > span:nth-child(6n + 3):hover { color: #ffcc00; }
+.rainbow > span:nth-child(6n + 4):hover { color: #34c759; }
+.rainbow > span:nth-child(6n + 5):hover { color: #5856d6; }
+.rainbow > span:nth-child(6n):hover { color: #af52de; }
 @media (max-width: 768px) {
   .wordmark { font-size: 28px; letter-spacing: -1px; }
 }

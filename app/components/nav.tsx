@@ -10,6 +10,11 @@ const links = [
   { href: "/projects", label: "Projects" },
 ];
 
+// Wraps each letter in a span so CSS can color it on hover; spaces stay plain text
+function rainbow(text: string) {
+  return [...text].map((ch, i) => (ch === " " ? " " : <span key={i}>{ch}</span>));
+}
+
 function toggleTheme() {
   const dark = document.documentElement.classList.toggle("dark-mode");
   localStorage.setItem("theme-preference", dark ? "dark" : "light");
@@ -34,14 +39,12 @@ export default function Nav() {
       <div>
         <Link href="/" className="wordmark block">
           {["NELSON NICOLΛS", "HIGUERΛ RUIZ"].map((line) => (
-            <span key={line} className="block">
-              {[...line].map((ch, i) =>
-                ch === " " ? " " : <span key={i}>{ch}</span>,
-              )}
+            <span key={line} className="block rainbow">
+              {rainbow(line)}
             </span>
           ))}
         </Link>
-        <p className="tagline">neurosymbolic ai researcher</p>
+        <p className="tagline rainbow">{rainbow("neurosymbolic ai researcher")}</p>
       </div>
       <div className="flex items-center gap-4">
         <button
