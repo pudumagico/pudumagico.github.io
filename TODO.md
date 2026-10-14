@@ -23,7 +23,7 @@
 
 - 2026-10-14: Replaced the WebGL perspective floor with a flat CSS checkerboard (40px squares, white/#ebebeb light, #333/#1a1a1a dark); deleted checkerboard.tsx.
 
-- 2026-10-14: Checkerboard squares enlarged to 60px; removed emoji icons from interest tiles; home timeline split into Industry, Academic, and Education columns below the masonry tiles; compact tiles (period right-aligned on the role line) so the home page fits one 1440x900 screen.
+- 2026-10-14: Checkerboard squares enlarged to 60px; removed emoji icons from interest tiles; home timeline split into Industry, Academic, and Education columns (PhD under Education) below the masonry tiles; compact tiles (period right-aligned on the role line) so the home page fits one 1440x900 screen.
 
 ## Pending
 - Confirm the CENIA entry detail text.

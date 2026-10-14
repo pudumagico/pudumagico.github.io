@@ -47,14 +47,14 @@ const timeline = {
       org: "NII, Tokyo, Japan",
       detail: "6-month internship. Fuzzy logic constraints in deep learning for autonomous driving. Led to NeurIPS 2025 paper.",
     },
+  ],
+  Education: [
     {
       period: "2020 – 2025",
       role: "PhD Researcher",
       org: "TU Wien, Austria",
       detail: "Neurosymbolic AI under Thomas Eiter. Bosch industrial collaboration. Co-supervised 3 BSc + 1 MSc students. PC member of NeSy and TAASP.",
     },
-  ],
-  Education: [
     {
       period: "2018 – 2019",
       role: "MSc Computer Science",
