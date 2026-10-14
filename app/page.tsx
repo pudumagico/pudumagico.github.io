@@ -25,13 +25,13 @@ const interests = [
 
 const timeline = [
   {
-    period: "from Dec 2026",
+    period: "2026 – present",
     role: "Postdoctoral Researcher",
     org: "CENIA",
     detail: "Postdoc at the National Center for Artificial Intelligence (CENIA).",
   },
   {
-    period: "Jan – Nov 2026",
+    period: "2026",
     role: "AI Researcher",
     org: "ExtensityAI",
     detail: "Research and development on neurosymbolic AI systems.",

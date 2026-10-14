@@ -24,6 +24,6 @@
 - 2026-10-14: Replaced the WebGL perspective floor with a flat CSS checkerboard (40px squares, white/#ebebeb light, #333/#1a1a1a dark); deleted checkerboard.tsx.
 
 ## Pending
-- Confirm the CENIA entry detail text; switch period to "2026 – present" in December.
+- Confirm the CENIA entry detail text.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
 - Verify the site in Google Search Console and request indexing to speed up discovery.
