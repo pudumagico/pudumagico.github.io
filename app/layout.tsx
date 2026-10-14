@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "PhD in Neurosymbolic AI (TU Wien). Publications at NeurIPS, AAAI, IJCAI, and KR.",
+  keywords: ["Nelson Higuera", "Neurosymbolic AI", "TU Wien", "CENIA", "Pontificia Universidad Católica de Chile", "PUC", "Answer Set Programming", "Explainable AI", "AI Researcher"],
   openGraph: {
     title: "Nelson Nicolas Higuera Ruiz — AI Researcher",
     description:

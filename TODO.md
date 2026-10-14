@@ -13,6 +13,13 @@
 
 - 2026-07-23: Removed the Personal tab and page on request (supersedes the pending item to fill it); nav back to About | Publications | Projects. Added sitemap.ts, robots.ts, and metadataBase for search indexing.
 
+- 2026-10-14: Added meta keywords and an NH favicon (app/icon.svg, black square with white NH); removed the default Next.js favicon.ico.
+
+- 2026-10-14: Timeline: ExtensityAI closed (2026, contract ends Nov 2026); added CENIA postdoc (from Dec 2026). Keywords extended with CENIA, Pontificia Universidad Católica de Chile, PUC.
+
+- 2026-10-14: Contact email changed to nhigueraruiz@gmail.com; CENIA entry org is plain "CENIA".
+
 ## Pending
+- Confirm the CENIA entry detail text; switch period to "2026 – present" in December.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
 - Verify the site in Google Search Console and request indexing to speed up discovery.

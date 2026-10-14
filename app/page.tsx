@@ -25,7 +25,13 @@ const interests = [
 
 const timeline = [
   {
-    period: "2026 – present",
+    period: "from Dec 2026",
+    role: "Postdoctoral Researcher",
+    org: "CENIA",
+    detail: "Postdoc at the National Center for Artificial Intelligence (CENIA).",
+  },
+  {
+    period: "2026",
     role: "AI Researcher",
     org: "ExtensityAI",
     detail: "Research and development on neurosymbolic AI systems.",
@@ -110,8 +116,8 @@ export default function Home() {
         </article>
       ))}
 
-      <a href="mailto:nelson.higueraruiz@extensity.ai" className="tile tile-link text-sm">
-        nelson.higueraruiz@extensity.ai
+      <a href="mailto:nhigueraruiz@gmail.com" className="tile tile-link text-sm">
+        nhigueraruiz@gmail.com
       </a>
       <a
         href="https://linkedin.com/in/nelson-higuera-ruiz-4372b2204"
