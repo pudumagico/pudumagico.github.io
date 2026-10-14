@@ -53,6 +53,8 @@ const timeline = {
       org: "TU Wien, Austria",
       detail: "Neurosymbolic AI under Thomas Eiter. Bosch industrial collaboration. Co-supervised 3 BSc + 1 MSc students. PC member of NeSy and TAASP.",
     },
+  ],
+  Education: [
     {
       period: "2018 – 2019",
       role: "MSc Computer Science",
@@ -75,7 +77,7 @@ const pages = [
 
 export default function Home() {
   return (
-    <div className="px-5 pt-8 pb-16">
+    <div className="px-5 pt-8 pb-6">
       <div className="masonry">
         <article className="tile">
           <p className="text-xs text-muted tracking-[1.5px] lowercase mb-2">
@@ -117,17 +119,17 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="grid gap-[10px] md:grid-cols-2">
+      <div className="grid gap-[10px] md:grid-cols-3">
         {Object.entries(timeline).map(([kind, items]) => (
           <section key={kind} className="flex flex-col gap-[10px]">
             <h2 className="text-2xl">{kind}</h2>
             {items.map((item) => (
               <article key={item.period} className="tile">
-                <div className="text-xs text-muted tracking-[1.5px] lowercase mb-1">
-                  {item.period}
-                </div>
-                <div className="text-sm font-semibold">
-                  {item.role} <span className="font-normal text-muted">&middot; {item.org}</span>
+                <div className="flex justify-between gap-2 text-sm">
+                  <span>
+                    <strong>{item.role}</strong> <span className="text-muted">&middot; {item.org}</span>
+                  </span>
+                  <span className="text-xs text-muted whitespace-nowrap">{item.period}</span>
                 </div>
                 <p className="text-xs leading-[1.4] text-muted mt-1">{item.detail}</p>
               </article>
