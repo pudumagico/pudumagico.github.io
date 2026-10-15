@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Publications — Nelson Nicolas Higuera Ruiz",
+  alternates: { canonical: "/publications/" },
 };
 
 const profiles = [

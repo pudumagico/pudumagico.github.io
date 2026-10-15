@@ -10,6 +10,14 @@ export type Publication = {
 export const publications: Publication[] = [
   // 2026
   {
+    title: "Distilling Answer Set Programming Theories from Large Language Models",
+    authors: "N. Higuera Ruiz, M. Hofmarcher, C. Leoveanu-Condrei",
+    venue: "NeSy 2026 (arXiv:2607.28086)",
+    venueShort: "NeSy",
+    year: 2026,
+    url: "https://doi.org/10.48550/arXiv.2607.28086",
+  },
+  {
     title:
       "Distilling Answer-Set Programming Rules from LLMs for Neurosymbolic Visual Question Answering",
     authors: "T. Eiter, N. Higuera Ruiz, J. Oetsch",

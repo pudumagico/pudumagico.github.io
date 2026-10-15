@@ -31,7 +31,11 @@
 
 - 2026-10-14: Tagline (neurosymbolic ai researcher) shares the wordmark's per-letter rainbow hover via a .rainbow class and rainbow() helper in nav.tsx.
 
+- 2026-10-15: SEO pass: added NeSy 2026 paper (arXiv:2607.28086); per-page canonical URLs; schema.org Person JSON-LD with sameAs links (Scholar, DBLP, ORCID, LinkedIn, GitHub); keyword "Nelson Higuera Ruiz"; GitHub profile website and repo homepage set to the site.
+
 ## Pending
 - Confirm the CENIA entry detail text.
 - Confirm the ExtensityAI job title and timeline detail text (currently "AI Researcher" / "Research and development on neurosymbolic AI systems", my wording).
-- Verify the site in Google Search Console and request indexing to speed up discovery.
+- Verify the site in Google Search Console and request indexing to speed up discovery (as of 2026-10-15 the site is not in search results, even for its own domain).
+- Register in Bing Webmaster Tools (import from Search Console) and submit sitemap.xml.
+- Point external profiles to https://pudumagico.github.io/ and update affiliations: Google Scholar (still "PreDoc Researcher, TU Wien"), LinkedIn, ORCID, OpenReview, alphaXiv.
